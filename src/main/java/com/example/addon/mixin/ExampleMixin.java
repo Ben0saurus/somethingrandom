@@ -1,6 +1,6 @@
 package com.example.addon.mixin;
 
-import com.example.addon.AddonTemplate;
+import com.example.addon.SomethingRandom;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.main.GameConfig;
 import org.spongepowered.asm.mixin.Mixin;
@@ -26,6 +26,6 @@ public abstract class ExampleMixin {
      */
     @Inject(method = "<init>", at = @At("TAIL"))
     private void onGameLoaded(GameConfig gameConfig, CallbackInfo ci) {
-        AddonTemplate.LOG.info("Hello from ExampleMixin!");
+        SomethingRandom.LOG.info("Hello from ExampleMixin!");
     }
 }
