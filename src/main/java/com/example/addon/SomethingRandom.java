@@ -4,10 +4,7 @@ import com.example.addon.commands.AdvertisingCommand;
 import com.example.addon.commands.MuteCommand;
 import com.example.addon.commands.RacismCommand;
 import com.example.addon.commands.SpamCommand;
-import com.example.addon.modules.AutoQueue;
-import com.example.addon.modules.FreecamFlight;
-import com.example.addon.modules.JoinAlarm;
-import com.example.addon.modules.JoinLeaveNotifier;
+import com.example.addon.modules.*;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -27,6 +24,7 @@ public class SomethingRandom extends MeteorAddon {
         // Modules
         Modules.get().add(new JoinLeaveNotifier());
         Modules.get().add(new JoinAlarm());
+        Modules.get().add(new DiscordBridge());
         //Modules.get().add(new FreecamFlight());
         //Modules.get().add(new AutoQueue());
 
